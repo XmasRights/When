@@ -14,24 +14,31 @@ struct ContentView: View {
     }
 
     var body: some View {
-        ZStack {
-            Color.gray
-                .edgesIgnoringSafeArea(.all)
-
+        ScrollView {
             VStack(spacing: 24) {
                 ForEach(widgetData) { data in
                     CountdownTimer.Widget(data: data)
-                        .frame(width: 200, height: 100, alignment: .center)
+                        .frame(width: 200, height: 180, alignment: .center)
                         .clipShape(RoundedRectangle.init(cornerRadius: 12))
+                        .shadow(radius: 12)
                 }
             }
+            .padding(.horizontal, 40)
+            .padding(.vertical, 24)
         }
-
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .previewLayout(.fixed(width: 480, height: 640))
+                .preferredColorScheme(.light)
+
+            ContentView()
+                .previewLayout(.fixed(width: 480, height: 640))
+                .preferredColorScheme(.dark)
+        }
     }
 }

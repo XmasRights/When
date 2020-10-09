@@ -12,27 +12,31 @@ extension CountdownTimer {
         let data: Data
 
         var body: some View {
-            VStack {
-                Color.green
-                    .overlay(
-                        HStack {
-                            Text(data.date, style: .relative)
-                                .bold()
-                                .padding(.horizontal, 12)
-                                .font(.largeTitle)
-                            Spacer()
-                        }
-                    )
+            ZStack {
+                Color("BackgroundColor", bundle: .main)
 
-                HStack {
-                    Text(data.title)
-                        .font(.caption)
-                        .padding(.horizontal, 12)
+                VStack {
+                    Color.green
+                        .overlay(
+                            HStack {
+                                Text(data.date, style: .relative)
+                                    .bold()
+                                    .padding(.horizontal, 12)
+                                    .font(.largeTitle)
+                                Spacer()
+                            }
+                        )
+
+                    HStack {
+                        Text(data.title)
+                            .font(.caption)
+                            .padding(.horizontal, 12)
+
+                        Spacer()
+                    }
 
                     Spacer()
                 }
-
-                Spacer()
             }
         }
     }
