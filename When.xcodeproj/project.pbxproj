@@ -13,6 +13,8 @@
 		4B2DD4A72530CE22005ED207 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2DD4A62530CE22005ED207 /* Preview Assets.xcassets */; };
 		4B2DD4B22530CE23005ED207 /* WhenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4B12530CE23005ED207 /* WhenTests.swift */; };
 		4B2DD4BD2530CE23005ED207 /* WhenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4BC2530CE23005ED207 /* WhenUITests.swift */; };
+		4B2DD4D62530CEE7005ED207 /* CountdownWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4D52530CEE7005ED207 /* CountdownWidget.swift */; };
+		4B2DD4DE2530CF7C005ED207 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4DD2530CF7C005ED207 /* CountdownTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		4B2DD4B82530CE23005ED207 /* WhenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2DD4BC2530CE23005ED207 /* WhenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhenUITests.swift; sourceTree = "<group>"; };
 		4B2DD4BE2530CE23005ED207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B2DD4D52530CEE7005ED207 /* CountdownWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownWidget.swift; sourceTree = "<group>"; };
+		4B2DD4DD2530CF7C005ED207 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 		4B2DD49E2530CE22005ED207 /* When */ = {
 			isa = PBXGroup;
 			children = (
+				4B2DD4D42530CEC7005ED207 /* Timer Widget */,
 				4B2DD49F2530CE22005ED207 /* WhenApp.swift */,
 				4B2DD4A12530CE22005ED207 /* ContentView.swift */,
 				4B2DD4A32530CE22005ED207 /* Assets.xcassets */,
@@ -128,6 +133,15 @@
 				4B2DD4BE2530CE23005ED207 /* Info.plist */,
 			);
 			path = WhenUITests;
+			sourceTree = "<group>";
+		};
+		4B2DD4D42530CEC7005ED207 /* Timer Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4B2DD4D52530CEE7005ED207 /* CountdownWidget.swift */,
+				4B2DD4DD2530CF7C005ED207 /* CountdownTimer.swift */,
+			);
+			path = "Timer Widget";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B2DD4A22530CE22005ED207 /* ContentView.swift in Sources */,
+				4B2DD4DE2530CF7C005ED207 /* CountdownTimer.swift in Sources */,
 				4B2DD4A02530CE22005ED207 /* WhenApp.swift in Sources */,
+				4B2DD4D62530CEE7005ED207 /* CountdownWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
