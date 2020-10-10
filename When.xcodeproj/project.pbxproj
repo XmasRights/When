@@ -17,6 +17,7 @@
 		4B2DD4DE2530CF7C005ED207 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4DD2530CF7C005ED207 /* CountdownTimer.swift */; };
 		4B2DD4E62530D23D005ED207 /* CountdownTimerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4E52530D23D005ED207 /* CountdownTimerStore.swift */; };
 		4B3B7C922530E01E00C86838 /* EditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7C912530E01E00C86838 /* EditSheet.swift */; };
+		4B3B7C9A2530E6D700C86838 /* CountdownStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7C992530E6D700C86838 /* CountdownStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4B2DD4DD2530CF7C005ED207 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		4B2DD4E52530D23D005ED207 /* CountdownTimerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimerStore.swift; sourceTree = "<group>"; };
 		4B3B7C912530E01E00C86838 /* EditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSheet.swift; sourceTree = "<group>"; };
+		4B3B7C992530E6D700C86838 /* CountdownStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				4B2DD4A82530CE22005ED207 /* Info.plist */,
 				4B2DD4A52530CE22005ED207 /* Preview Content */,
 				4B3B7C912530E01E00C86838 /* EditSheet.swift */,
+				4B3B7C992530E6D700C86838 /* CountdownStore.swift */,
 			);
 			path = When;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3B7C9A2530E6D700C86838 /* CountdownStore.swift in Sources */,
 				4B2DD4E62530D23D005ED207 /* CountdownTimerStore.swift in Sources */,
 				4B2DD4A22530CE22005ED207 /* ContentView.swift in Sources */,
 				4B2DD4DE2530CF7C005ED207 /* CountdownTimer.swift in Sources */,

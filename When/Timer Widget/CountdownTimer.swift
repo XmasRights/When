@@ -10,13 +10,9 @@ import SwiftUI
 enum CountdownTimer {}
 
 extension CountdownTimer {
-    struct Data: Codable, Identifiable {
-        var id: String {
-            return title
-        }
-
-        let title: String
-        let date: Date
+    struct Data: Codable {
+        var title: String
+        var date: Date
     }
 }
 

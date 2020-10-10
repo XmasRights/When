@@ -8,22 +8,21 @@
 import SwiftUI
 
 struct EditSheet: View {
-    @State var name: String
-    @State var date: Date
+    @Binding var data: CountdownStore.Entry
 
-    var data: CountdownTimer.Data {
-        .init(title: name, date: date)
+    private var widgetData: CountdownTimer.Data {
+        .init(title: data.title, date: data.date)
     }
 
     var body: some View {
         VStack {
-            CountdownTimer.Widget(data: data)
+            CountdownTimer.Widget(data: widgetData)
                 .frame(width: 300, height: 160)
 
             Form {
                 Section {
-                    TextField("Title", text: $name)
-                    DatePicker("When", selection: $date)
+                    TextField("Title", text:  $data.title)
+                    DatePicker("When", selection: $data.date)
                 }
             }
         }
@@ -31,11 +30,11 @@ struct EditSheet: View {
     }
 }
 
-struct EditSheet_Previews: PreviewProvider {
-    static var previews: some View {
-        EditSheet(
-            name: "",
-            date: Date()
-        )
-    }
-}
+//struct EditSheet_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EditSheet(
+//            name: "",
+//            date: Date()
+//        )
+//    }
+//}

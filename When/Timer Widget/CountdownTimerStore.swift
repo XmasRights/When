@@ -8,15 +8,11 @@
 import Foundation
 
 extension CountdownTimer {
-    struct Store {
-        func all() -> [Data] {
-            // TODO: get from backend
-
-            return [
-                .init(title: "PS5 🚀", date: .ps5Launch),
-                .init(title: "Xbox Series X 🚀", date: .xboxLaunch)
-            ]
-        }
+    class Store: ObservableObject {
+        @Published var all: [Data] = [
+            .init(title: "PS5 🚀", date: .ps5Launch),
+            .init(title: "Xbox Series X 🚀", date: .xboxLaunch)
+        ]
 
         func store(data: [Data]) {
             // TODO: Store into backend
