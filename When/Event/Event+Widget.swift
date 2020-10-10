@@ -1,5 +1,5 @@
 //
-//  CountdownWidget.swift
+//  Event+Widget.swift
 //  When
 //
 //  Created by Christopher Fonseka on 09/10/2020.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension CountdownTimer {
+extension Event {
     struct Widget: View {
         let data: Data
 
@@ -44,19 +44,19 @@ extension CountdownTimer {
 
 
 struct TimerWidget_Previews: PreviewProvider {
-    private static let data: CountdownTimer.Data = .init(
+    private static let data: Event.Data = .init(
         title: "Widget Complete",
         date: .init(timeIntervalSinceNow: 4200)
     )
 
     static var previews: some View {
         Group {
-            CountdownTimer.Widget(data: data)
+            Event.Widget(data: data)
                 .previewLayout(.fixed(width: 200, height: 200))
                 .previewDisplayName("Light")
                 .preferredColorScheme(.light)
 
-            CountdownTimer.Widget(data: data)
+            Event.Widget(data: data)
                 .previewLayout(.fixed(width: 200, height: 200))
                 .previewDisplayName("Dark")
                 .preferredColorScheme(.dark)

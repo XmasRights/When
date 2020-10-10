@@ -13,10 +13,11 @@
 		4B2DD4A72530CE22005ED207 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2DD4A62530CE22005ED207 /* Preview Assets.xcassets */; };
 		4B2DD4B22530CE23005ED207 /* WhenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4B12530CE23005ED207 /* WhenTests.swift */; };
 		4B2DD4BD2530CE23005ED207 /* WhenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4BC2530CE23005ED207 /* WhenUITests.swift */; };
-		4B2DD4D62530CEE7005ED207 /* CountdownWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4D52530CEE7005ED207 /* CountdownWidget.swift */; };
-		4B2DD4DE2530CF7C005ED207 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4DD2530CF7C005ED207 /* CountdownTimer.swift */; };
+		4B2DD4D62530CEE7005ED207 /* Event+Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4D52530CEE7005ED207 /* Event+Widget.swift */; };
+		4B2DD4DE2530CF7C005ED207 /* Event+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4DD2530CF7C005ED207 /* Event+Data.swift */; };
 		4B3B7C922530E01E00C86838 /* EditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7C912530E01E00C86838 /* EditSheet.swift */; };
-		4B3B7C9A2530E6D700C86838 /* CountdownStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7C992530E6D700C86838 /* CountdownStore.swift */; };
+		4BA9F963253225D60003AFB8 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA9F962253225D60003AFB8 /* Event.swift */; };
+		4BA9F96E253226E50003AFB8 /* Event+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA9F96D253226E50003AFB8 /* Event+Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +50,11 @@
 		4B2DD4B82530CE23005ED207 /* WhenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2DD4BC2530CE23005ED207 /* WhenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhenUITests.swift; sourceTree = "<group>"; };
 		4B2DD4BE2530CE23005ED207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B2DD4D52530CEE7005ED207 /* CountdownWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownWidget.swift; sourceTree = "<group>"; };
-		4B2DD4DD2530CF7C005ED207 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
+		4B2DD4D52530CEE7005ED207 /* Event+Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+Widget.swift"; sourceTree = "<group>"; };
+		4B2DD4DD2530CF7C005ED207 /* Event+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+Data.swift"; sourceTree = "<group>"; };
 		4B3B7C912530E01E00C86838 /* EditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSheet.swift; sourceTree = "<group>"; };
-		4B3B7C992530E6D700C86838 /* CountdownStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownStore.swift; sourceTree = "<group>"; };
+		4BA9F962253225D60003AFB8 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		4BA9F96D253226E50003AFB8 /* Event+Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+Store.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +105,13 @@
 		4B2DD49E2530CE22005ED207 /* When */ = {
 			isa = PBXGroup;
 			children = (
-				4B2DD4D42530CEC7005ED207 /* Timer Widget */,
+				4BA9F9752532271F0003AFB8 /* Edit Sheet */,
+				4B2DD4D42530CEC7005ED207 /* Event */,
 				4B2DD49F2530CE22005ED207 /* WhenApp.swift */,
 				4B2DD4A12530CE22005ED207 /* ContentView.swift */,
 				4B2DD4A32530CE22005ED207 /* Assets.xcassets */,
 				4B2DD4A82530CE22005ED207 /* Info.plist */,
 				4B2DD4A52530CE22005ED207 /* Preview Content */,
-				4B3B7C912530E01E00C86838 /* EditSheet.swift */,
-				4B3B7C992530E6D700C86838 /* CountdownStore.swift */,
 			);
 			path = When;
 			sourceTree = "<group>";
@@ -141,13 +142,23 @@
 			path = WhenUITests;
 			sourceTree = "<group>";
 		};
-		4B2DD4D42530CEC7005ED207 /* Timer Widget */ = {
+		4B2DD4D42530CEC7005ED207 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				4B2DD4D52530CEE7005ED207 /* CountdownWidget.swift */,
-				4B2DD4DD2530CF7C005ED207 /* CountdownTimer.swift */,
+				4BA9F962253225D60003AFB8 /* Event.swift */,
+				4B2DD4DD2530CF7C005ED207 /* Event+Data.swift */,
+				4BA9F96D253226E50003AFB8 /* Event+Store.swift */,
+				4B2DD4D52530CEE7005ED207 /* Event+Widget.swift */,
 			);
-			path = "Timer Widget";
+			path = Event;
+			sourceTree = "<group>";
+		};
+		4BA9F9752532271F0003AFB8 /* Edit Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				4B3B7C912530E01E00C86838 /* EditSheet.swift */,
+			);
+			path = "Edit Sheet";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,12 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B3B7C9A2530E6D700C86838 /* CountdownStore.swift in Sources */,
 				4B2DD4A22530CE22005ED207 /* ContentView.swift in Sources */,
-				4B2DD4DE2530CF7C005ED207 /* CountdownTimer.swift in Sources */,
+				4BA9F963253225D60003AFB8 /* Event.swift in Sources */,
+				4B2DD4DE2530CF7C005ED207 /* Event+Data.swift in Sources */,
 				4B3B7C922530E01E00C86838 /* EditSheet.swift in Sources */,
 				4B2DD4A02530CE22005ED207 /* WhenApp.swift in Sources */,
-				4B2DD4D62530CEE7005ED207 /* CountdownWidget.swift in Sources */,
+				4BA9F96E253226E50003AFB8 /* Event+Store.swift in Sources */,
+				4B2DD4D62530CEE7005ED207 /* Event+Widget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

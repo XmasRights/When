@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var store = CountdownStore.Library()
+    @ObservedObject var store = Event.Store()
 
     var body: some View {
         ScrollView {
@@ -32,14 +32,14 @@ extension Sequence {
 struct WidgetCard: View {
     @State var showingSheet = false
 
-    @Binding var data: CountdownStore.Entry
+    @Binding var data: Event.Data
 
-    var widgetData: CountdownTimer.Data {
+    var widgetData: Event.Data {
         .init(title: data.title, date: data.date)
     }
 
     var body: some View {
-        CountdownTimer.Widget(data: widgetData)
+        Event.Widget(data: widgetData)
             .frame(width: 200, height: 180, alignment: .center)
             .clipShape(RoundedRectangle.init(cornerRadius: 12))
             .shadow(radius: 12)

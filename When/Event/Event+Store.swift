@@ -1,29 +1,15 @@
 //
-//  CountdownStore.swift
+//  Event+Store.swift
 //  When
 //
-//  Created by Christopher Fonseka on 09/10/2020.
+//  Created by Christopher Fonseka on 10/10/2020.
 //
 
-import SwiftUI
+import Foundation
 
-enum CountdownStore {}
-
-extension CountdownStore {
-    class Entry: Identifiable {
-        let id: UUID
-        var title: String
-        var date: Date
-
-        init(title: String, date: Date) {
-            self.id = .init()
-            self.title = title
-            self.date = date
-        }
-    }
-
-    class Library: ObservableObject {
-        @Published var all: [Entry] = [
+extension Event {
+    class Store: ObservableObject {
+        @Published var all: [Data] = [
             .init(title: "PS5 Launch", date: .ps5Launch),
             .init(title: "Xbox Launch", date: .xboxLaunch)
         ]
@@ -45,4 +31,3 @@ private extension Date {
         return Calendar.current.date(from: components)!
     }
 }
-
