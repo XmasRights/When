@@ -16,7 +16,7 @@ extension Event {
                 Color("BackgroundColor", bundle: .main)
 
                 VStack {
-                    Color.green
+                    data.color
                         .overlay(
                             HStack {
                                 Text(data.date, style: .relative)
@@ -46,7 +46,8 @@ extension Event {
 struct TimerWidget_Previews: PreviewProvider {
     private static let data: Event.Data = .init(
         title: "Widget Complete",
-        date: .init(timeIntervalSinceNow: 4200)
+        date: .init(timeIntervalSinceNow: 4200),
+        color: .purple
     )
 
     static var previews: some View {

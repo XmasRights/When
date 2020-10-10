@@ -13,13 +13,23 @@ struct EditSheet: View {
     var body: some View {
         Form {
             Section {
-                Event.Widget(data: data)
-                    .frame(width: 300, height: 160)
+                HStack {
+                    Spacer()
+                    Event.Widget(data: data)
+                        .frame(width: 169, height: 169)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .shadow(radius: 12)
+                    Spacer()
+                }
+            }
+
+            Section {
+                DatePicker("When", selection: $data.date)
             }
 
             Section {
                 TextField("Title", text:  $data.title)
-                DatePicker("When", selection: $data.date)
+                ColorPicker("Color", selection: $data.color)
             }
         }
     }
@@ -28,7 +38,8 @@ struct EditSheet: View {
 struct EditSheet_Previews: PreviewProvider {
     @State static var data: Event.Data = .init(
         title: "Hello World",
-        date: Date(timeIntervalSinceNow: 420)
+        date: Date(timeIntervalSinceNow: 420),
+        color: .blue
     )
 
     static var previews: some View {

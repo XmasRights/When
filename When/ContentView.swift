@@ -11,14 +11,10 @@ struct ContentView: View {
     @ObservedObject var store = Event.Store()
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: 24) {
-                ForEach(store.all.indexed(), id: \.1.id) { index, data in
-                    WidgetCard(data: self.$store.all[index])
-                }
+        List {
+            ForEach(store.all.indexed(), id: \.1.id) { index, data in
+                WidgetCard(data: self.$store.all[index])
             }
-            .padding(.horizontal, 40)
-            .padding(.vertical, 24)
         }
     }
 }
@@ -31,17 +27,12 @@ extension Sequence {
 
 struct WidgetCard: View {
     @State var showingSheet = false
-
     @Binding var data: Event.Data
 
-    var widgetData: Event.Data {
-        .init(title: data.title, date: data.date)
-    }
-
     var body: some View {
-        Event.Widget(data: widgetData)
-            .frame(width: 200, height: 180, alignment: .center)
-            .clipShape(RoundedRectangle.init(cornerRadius: 12))
+        Event.Widget(data: data)
+            .frame(width: 169, height: 169, alignment: .center)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
             .shadow(radius: 12)
             .onTapGesture { self.showingSheet.toggle() }
             .sheet(isPresented: $showingSheet, content: {

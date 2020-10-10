@@ -10,8 +10,8 @@ import Foundation
 extension Event {
     class Store: ObservableObject {
         @Published var all: [Data] = [
-            .init(title: "PS5 Launch", date: .ps5Launch),
-            .init(title: "Xbox Launch", date: .xboxLaunch)
+            .init(title: "PS5 Launch", date: .ps5Launch, color: .blue),
+            .init(title: "Xbox Launch", date: .xboxLaunch, color: .green)
         ]
     }
 }
