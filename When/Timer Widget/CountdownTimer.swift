@@ -11,8 +11,8 @@ enum CountdownTimer {}
 
 extension CountdownTimer {
     struct Data: Codable {
-        var title: String
-        var date: Date
+        let title: String
+        let date: Date
     }
 }
 

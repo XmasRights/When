@@ -30,3 +30,19 @@ extension CountdownStore {
     }
 }
 
+private extension Date {
+    static var ps5Launch: Date {
+        let components = DateComponents(
+            year: 2020, month: 11, day: 12
+        )
+        return Calendar.current.date(from: components)!
+    }
+
+    static var xboxLaunch: Date {
+        let components = DateComponents(
+            year: 2020, month: 11, day: 10
+        )
+        return Calendar.current.date(from: components)!
+    }
+}
+

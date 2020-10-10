@@ -15,7 +15,6 @@
 		4B2DD4BD2530CE23005ED207 /* WhenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4BC2530CE23005ED207 /* WhenUITests.swift */; };
 		4B2DD4D62530CEE7005ED207 /* CountdownWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4D52530CEE7005ED207 /* CountdownWidget.swift */; };
 		4B2DD4DE2530CF7C005ED207 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4DD2530CF7C005ED207 /* CountdownTimer.swift */; };
-		4B2DD4E62530D23D005ED207 /* CountdownTimerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD4E52530D23D005ED207 /* CountdownTimerStore.swift */; };
 		4B3B7C922530E01E00C86838 /* EditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7C912530E01E00C86838 /* EditSheet.swift */; };
 		4B3B7C9A2530E6D700C86838 /* CountdownStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7C992530E6D700C86838 /* CountdownStore.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +51,6 @@
 		4B2DD4BE2530CE23005ED207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B2DD4D52530CEE7005ED207 /* CountdownWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownWidget.swift; sourceTree = "<group>"; };
 		4B2DD4DD2530CF7C005ED207 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
-		4B2DD4E52530D23D005ED207 /* CountdownTimerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimerStore.swift; sourceTree = "<group>"; };
 		4B3B7C912530E01E00C86838 /* EditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSheet.swift; sourceTree = "<group>"; };
 		4B3B7C992530E6D700C86838 /* CountdownStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,7 +146,6 @@
 			children = (
 				4B2DD4D52530CEE7005ED207 /* CountdownWidget.swift */,
 				4B2DD4DD2530CF7C005ED207 /* CountdownTimer.swift */,
-				4B2DD4E52530D23D005ED207 /* CountdownTimerStore.swift */,
 			);
 			path = "Timer Widget";
 			sourceTree = "<group>";
@@ -283,7 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B3B7C9A2530E6D700C86838 /* CountdownStore.swift in Sources */,
-				4B2DD4E62530D23D005ED207 /* CountdownTimerStore.swift in Sources */,
 				4B2DD4A22530CE22005ED207 /* ContentView.swift in Sources */,
 				4B2DD4DE2530CF7C005ED207 /* CountdownTimer.swift in Sources */,
 				4B3B7C922530E01E00C86838 /* EditSheet.swift in Sources */,
